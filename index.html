@@ -13,15 +13,83 @@
 </head>
 
 <body>
-    <header>
+    <header class="bg-custom-color">
         <!-- nav start-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a href=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-5 pe-5 ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
 
+
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn border-0 btn-color text-light px-3" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
         <!-- nav end-->
         <!-- banner start -->
+        <section class="container">
+            <div class="row py-5 ">
+                <div class="col-lg-6 col-sm-12 p-3 text-white my-auto ">
+                    <p class="fw-lighter">Computer-controlled digital transistorized with electronic advance</p>
+                    <h1 class="fw-bold fs-1">Honda CBR 300R</h1>
+                    <p class="fw-lighter">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <button class="btn border-0 btn-color text-light px-5" type="submit">Purchase</button>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <img class="img-fluid" width="552px" height="447px" src="images/header-bike.png" alt="">
+                </div>
+            </div>
+        </section>
         <!-- banner end -->
     </header>
     <main>
-        <!--  -->
+        <!-- Fetured Bikes 2021 start -->
+        <section class="container">
+            <div class="text-center p-5">
+                <h1 class="text-black">Fetured Bikes 2021</h1>
+                <p class="text-color">Best bike collection</p>
+            </div>
+            <!-- bike image card start -->
+            <div class="row row-cols-1 row-cols-md-3 g-5 p-2 ">
+                <div class="col p-4">
+                    <div class="card h-100 border-0 p-2 m-3">
+                        <img class="img-grayscal" src="images/feature-bike.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col p-4">
+                    <div class="card h-100 border-0 p-2 m-3">
+                        <img src="images/feature-bike.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col p-4">
+                    <div class="card h-100 border-0 p-2 m-3">
+                        <img class="img-grayscal" src="images/feature-bike.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+            </div>
+            <!-- bike image card end -->
+        </section>
+        <!-- Fetured Bikes 2021 end -->
     </main>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
