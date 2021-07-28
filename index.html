@@ -8,6 +8,8 @@
     <title>Honda CBR BOOTSTRAP</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/077b0cae9f.js" crossorigin="anonymous"></script>
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,7 +19,7 @@
         <!-- nav start-->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a href=""></a>
+                <a class="navbar-brand" href=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -52,7 +54,41 @@
                     <p class="fw-lighter">Computer-controlled digital transistorized with electronic advance</p>
                     <h1 class="fw-bold fs-1">Honda CBR 300R</h1>
                     <p class="fw-lighter">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <button class="btn border-0 btn-color text-light px-5" type="submit">Purchase</button>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn border-0 btn-color text-light px-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Purchase
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog ">
+                            <div class="modal-content btn-color">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-color1 fw-bold fs-2" id="exampleModalLabel">Product in the cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-white fw-light">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-12">
+                                            <img class="ps-5 pt-3" src="images/shopping-cart 1.png">
+                                        </div>
+                                        <div class="col-lg-8 col-md-12">
+                                            <p class="">Do you need more time to make a purchase decision?</p>
+                                            <p>No pressure, your product will be waiting for you in the cart.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer ">
+                                    <div class="mx-auto">
+                                        <button type="button" class="btn btn-outline-light " data-bs-dismiss="modal">Go to cart</button>
+                                        <button type="button" class="btn btn-outline-light waves-effect">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-lg-6 col-sm-12">
                     <img class="img-fluid" width="552px" height="447px" src="images/header-bike.png" alt="">
@@ -69,20 +105,20 @@
                 <p class="text-color">Best bike collection</p>
             </div>
             <!-- bike image card start -->
-            <div class="row row-cols-1 row-cols-md-3 g-5 p-2 ">
+            <div class="row row-cols-1 row-cols-md-3 g-3 p-2">
                 <div class="col p-4">
                     <div class="card h-100 border-0 p-2 m-3">
-                        <img class="img-grayscal" src="images/feature-bike.jpg" class="card-img-top" alt="...">
+                        <img class="img-grayscal img-fluid" src="images/feature-bike.jpg" class="card-img-top" alt="...">
                     </div>
                 </div>
                 <div class="col p-4">
                     <div class="card h-100 border-0 p-2 m-3">
-                        <img src="images/feature-bike.jpg" class="card-img-top" alt="...">
+                        <img src="images/feature-bike.jpg" class="card-img-top img-fluid" alt="...">
                     </div>
                 </div>
                 <div class="col p-4">
                     <div class="card h-100 border-0 p-2 m-3">
-                        <img class="img-grayscal" src="images/feature-bike.jpg" class="card-img-top" alt="...">
+                        <img class="img-grayscal" src="images/feature-bike.jpg" class="card-img-top img-fluid" alt="...">
                     </div>
                 </div>
 
@@ -90,8 +126,207 @@
             <!-- bike image card end -->
         </section>
         <!-- Fetured Bikes 2021 end -->
+        <!-- Happy Clients says start-->
+        <section class="container">
+            <div class="text-center p-5">
+                <h1 class="text-black">Happy <span class="text-color">Clients says</span></h1>
+            </div>
+            <!-- feedback card -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+                <div class="col">
+                    <div class="card h-100 p-3 me-3 rounded-3 hover-card">
+                        <img class="pe-5 ps-5 pb-3 pt-3 mx-3" src="images/user-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <p class="card-text fw-light">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-white mx-auto">
+                            <ul class="list-group list-group-horizontal  ">
+                                <li class="list-group-item border-0 p-2"><i class="fas fa-star"></i></li>
+                                <li class="list-group-item border-0 p-2"><i class="fas fa-star"></i></li>
+                                <li class="list-group-item border-0 p-2"><i class="fas fa-star"></i></li>
+                                <li class="list-group-item border-0 p-2"><i class="fas fa-star"></i></li>
+                                <li class="list-group-item border-0 p-2"><i class="far fa-star"></i></li>
+                            </ul>
+                            <a class="nav-link" href="#">Regina Miles</a>
+                            <p>Banker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 p-3 me-3 rounded-3 hover-card">
+                        <img class="pe-5 ps-5 pb-3 pt-3 mx-3" src="images/user-2.png" class=" card-img-top " alt="... ">
+                        <div class="card-body ">
+
+                            <p class="card-text fw-light ">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-white mx-auto ">
+                            <ul class="list-group list-group-horizontal ">
+                                <li class="list-group-item border-0 p-2 "><i class="fas fa-star "></i></li>
+                                <li class="list-group-item border-0 p-2 "><i class="fas fa-star "></i></li>
+                                <li class="list-group-item border-0 p-2 "><i class="fas fa-star "></i></li>
+                                <li class="list-group-item border-0 p-2 "><i class="fas fa-star "></i></li>
+                                <li class="list-group-item border-0 p-2 "><i class="far fa-star "></i></li>
+                            </ul>
+                            <a class="nav-link " href="# ">Regina Miles</a>
+                            <p>Banker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card h-100 p-3 me-3 rounded-3 hover-card ">
+                        <img class="pe-5 ps-5 pb-3 pt-3 mx-3 " src="images/circle-box circle-xl mx-auto.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+
+                            <p class="card-text fw-light ">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-white mx-auto ">
+                            <ul class="list-group list-group-horizontal ">
+                                <li class="list-group-item border-0 p-2 "><i class="fas fa-star "></i></li>
+                                <li class="list-group-item border-0 p-2 "><i class="fas fa-star "></i></li>
+                                <li class="list-group-item border-0 p-2 "><i class="fas fa-star "></i></li>
+                                <li class="list-group-item border-0 p-2 "><i class="fas fa-star "></i></li>
+                                <li class="list-group-item border-0 p-2 "><i class="far fa-star "></i></li>
+                            </ul>
+                            <a class="nav-link " href="# ">Regina Miles</a>
+                            <p>Banker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Happy Clients says end-->
+        <!-- questions start-->
+        <section class="container">
+            <div class="text-center p-5">
+                <h1 class="text-black">Frequently Asked <span class="text-color">Questions</span></h1>
+            </div>
+            <!-- colapes section -->
+            <div class="row">
+                <div class="col-lg-5 col-sm-12  ">
+                    <img width="424.8px" height="397.5px" class="img-fluid" src="images/faq.png" alt="">
+                </div>
+                <div class="col-lg-6 col-sm-12 ms-auto">
+                    <div class="shadow-sm p-3 mb-2 bg-body rounded">
+                        <button class="collapsible px-2">What are the most important things I should
+                        know about riding a bike?</button>
+                        <div class="content">
+                            <p class="fw-light">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike
+                                rider. </p>
+                        </div>
+                    </div>
+                    <div class="shadow-sm p-3 mb-2 bg-body rounded">
+                        <button class="collapsible px-2">How can I tell if my helmet is old and I need a 
+                            new one?</button>
+                        <div class="content">
+                            <p class="fw-light">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike
+                                rider. </p>
+                        </div>
+                    </div>
+                    <div class="shadow-sm p-3 mb-2 bg-body rounded">
+                        <button class="collapsible px-2">My bike has been in storage is it safe to ride?</button>
+                        <div class="content">
+                            <p class="fw-light">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike
+                                rider. </p>
+                        </div>
+                    </div>
+                    <div class="shadow-sm p-3 mb-2 bg-body rounded">
+                        <button class="collapsible px-2">What rules should I follow when riding my bike?</button>
+                        <div class="content">
+                            <p class="fw-light">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike
+                                rider. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- questions end-->
+        <!-- form start-->
+        <section class="container">
+            <div class="row m-4">
+                <div class="col-lg-5 col-md-6 d-flex align-items-center mt-4 position-relative ">
+                    <form class="row g-3 needs-validation form-bg p-3  " novalidate>
+                        <h2 class="text-start fw-bold text-light">Find your space now</h2>
+                        <div class="col-md- position-relative">
+                            <div class="form-floating mb-3 ">
+
+                                <select class="form-select rounded-0 input-color border-0 text-bold text-light" id="floatingSelect" aria-label="Floating label select example ">
+                                  <option selected>Malang, Indonesia</option>
+                                  <option value="1">Malang, Indonesia</option>
+                                  <option value="2">Malang, Indonesia</option>
+                                  <option value="3">Malang, Indonesia</option>
+                                </select>
+                                <label class="text-muted" for="floatingSelect">Street</label>
+                            </div>
+                            <div class="form-floating mb-3 ">
+
+                                <select class="form-select rounded-0 input-color border-0 text-bold text-light" id="floatingSelect" aria-label="Floating label select example ">
+                                  <option selected>Malang, Indonesia</option>
+                                  <option value="1">Malang, Indonesia</option>
+                                  <option value="2">Malang, Indonesia</option>
+                                  <option value="3">Malang, Indonesia</option>
+                                </select>
+                                <label class="text-muted" for="floatingSelect">City</label>
+                            </div>
+                            <div class="form-floating mb-3 ">
+
+                                <select class="form-select rounded-0 input-color border-0 text-bold text-light " id="floatingSelect" aria-label="Floating label select example ">
+                                  <option selected>Malang, Indonesia</option>
+                                  <option value="1">Malang, Indonesia</option>
+                                  <option value="2">Malang, Indonesia</option>
+                                  <option value="3">Malang, Indonesia</option>
+                                </select>
+                                <label class="text-muted" for="floatingSelect">Country</label>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn w-100 p-2border-0 btn-color text-light " type="submit">FIND MY SPACE</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <img class="img-fluid" src="images/4957136.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- form end-->
+        <!-- search start -->
+        <section class="container w-50">
+
+            <form class="form-inline d-flex">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark waves-effect my-0 " type="submit"><i class="fas fa-search"></i></button>
+            </form>
+
+        </section>
+        <!-- search end -->
+        <!-- footer start -->
+        <footer class="footer-color mt-5 p-5">
+            <p class="text-center">© 2021 | Afsana Kabir Sinthia</p>
+        </footer>
+        <!-- footer end -->
     </main>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- collaps -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <!-- boot -->
+    <script src="js/bootstrap.bundle.min.js "></script>
 </body>
 
 </html>

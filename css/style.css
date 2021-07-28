@@ -12,6 +12,10 @@ body {
     color: #E76F51;
 }
 
+.text-color1 {
+    color: #264653;
+}
+
 .btn-color {
     background-color: #E76F51;
 }
@@ -25,4 +29,71 @@ body {
 
 .img-grayscal {
     filter: grayscale(100%);
+}
+
+
+/* hover-card */
+
+.hover-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* icon star */
+
+.fa-star {
+    color: #E77C40;
+}
+
+
+/* collaps */
+
+.collapsible {
+    background-color: white;
+    color: rgb(41, 38, 38);
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible:after {
+    content: '\f107';
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-family: 'FontAwesome';
+}
+
+.active:after {
+    content: "\f106";
+}
+
+.content {
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+}
+
+
+/* form */
+
+.form-bg {
+    background-color: #264653;
+}
+
+.input-color {
+    background-color: #375c6b!important;
+}
+
+
+/* footer */
+
+.footer-color {
+    background-color: #0B0D17;
 }
